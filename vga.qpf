@@ -1,0 +1,6 @@
+# Project file
+
+QUARTUS_VERSION = "13.0"
+DATE = "18:54:46  January 09, 2020"
+
+PROJECT_REVISION = "vga"
