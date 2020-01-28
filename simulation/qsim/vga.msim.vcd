@@ -1,0 +1,431 @@
+$comment
+	File created using the following command:
+		vcd file vga.msim.vcd -direction
+$end
+$date
+	Mon Jan 20 18:31:19 2020
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module vga_vlg_vec_tst $end
+$var reg 1 ! treg_alive_led $end
+$var reg 1 " clk_50 $end
+$var wire 1 # alive_led $end
+$var wire 1 $ vga_blue $end
+$var wire 1 % vga_green $end
+$var wire 1 & vga_hsync $end
+$var wire 1 ' vga_red $end
+$var wire 1 ( vga_vsync $end
+$var wire 1 ) sampler $end
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 Add0~0_combout $end
+$var wire 1 1 Add0~2_combout $end
+$var wire 1 2 Add1~0_combout $end
+$var wire 1 3 Add1~2_combout $end
+$var wire 1 4 Add1~12_combout $end
+$var wire 1 5 Add1~19_combout $end
+$var wire 1 6 Add2~2_combout $end
+$var wire 1 7 LessThan2~0_combout $end
+$var wire 1 8 process_1~5_combout $end
+$var wire 1 9 vga_rgb~0_combout $end
+$var wire 1 : h_pos[1]~12_combout $end
+$var wire 1 ; Add1~7_combout $end
+$var wire 1 < Add1~8_combout $end
+$var wire 1 = Add1~21_combout $end
+$var wire 1 > Add1~28_combout $end
+$var wire 1 ? LessThan7~1_combout $end
+$var wire 1 @ alive_counter[0]~0_combout $end
+$var wire 1 A h_pos[0]~11_combout $end
+$var wire 1 B Add0~1 $end
+$var wire 1 C Add0~3 $end
+$var wire 1 D Add0~5 $end
+$var wire 1 E Add0~7 $end
+$var wire 1 F Add0~9 $end
+$var wire 1 G Add0~11 $end
+$var wire 1 H Add0~12_combout $end
+$var wire 1 I Add0~10_combout $end
+$var wire 1 J Add0~8_combout $end
+$var wire 1 K LessThan0~2_combout $end
+$var wire 1 L Add0~13 $end
+$var wire 1 M Add0~15 $end
+$var wire 1 N Add0~16_combout $end
+$var wire 1 O h_pos[9]~14_combout $end
+$var wire 1 P Add0~17 $end
+$var wire 1 Q Add0~18_combout $end
+$var wire 1 R h_pos[10]~13_combout $end
+$var wire 1 S LessThan0~3_combout $end
+$var wire 1 T LessThan0~3clkctrl_outclk $end
+$var wire 1 U Add1~1 $end
+$var wire 1 V Add1~3 $end
+$var wire 1 W Add1~5 $end
+$var wire 1 X Add1~9_combout $end
+$var wire 1 Y Add1~18 $end
+$var wire 1 Z Add1~20 $end
+$var wire 1 [ Add1~22_combout $end
+$var wire 1 \ Add1~24_combout $end
+$var wire 1 ] LessThan1~0_combout $end
+$var wire 1 ^ LessThan1~1_combout $end
+$var wire 1 _ LessThan1~2_combout $end
+$var wire 1 ` Add1~11_combout $end
+$var wire 1 a Add1~10 $end
+$var wire 1 b Add1~13 $end
+$var wire 1 c Add1~14_combout $end
+$var wire 1 d Add1~16_combout $end
+$var wire 1 e Add1~15 $end
+$var wire 1 f Add1~17_combout $end
+$var wire 1 g Add1~29_combout $end
+$var wire 1 h Add1~23 $end
+$var wire 1 i Add1~25_combout $end
+$var wire 1 j Add1~27_combout $end
+$var wire 1 k LessThan6~1_combout $end
+$var wire 1 l Add1~4_combout $end
+$var wire 1 m Add1~6_combout $end
+$var wire 1 n LessThan6~0_combout $end
+$var wire 1 o LessThan6~2_combout $end
+$var wire 1 p LessThan6~2clkctrl_outclk $end
+$var wire 1 q Add2~0_combout $end
+$var wire 1 r Add2~1 $end
+$var wire 1 s Add2~3 $end
+$var wire 1 t Add2~4_combout $end
+$var wire 1 u Add2~5 $end
+$var wire 1 v Add2~6_combout $end
+$var wire 1 w Add2~7 $end
+$var wire 1 x Add2~9 $end
+$var wire 1 y Add2~11 $end
+$var wire 1 z Add2~12_combout $end
+$var wire 1 { Add2~10_combout $end
+$var wire 1 | Add2~8_combout $end
+$var wire 1 } LessThan7~0_combout $end
+$var wire 1 ~ LessThan7~2_combout $end
+$var wire 1 !! alive_led$latch~0_combout $end
+$var wire 1 "! h_pos[7]~10_combout $end
+$var wire 1 #! Add0~6_combout $end
+$var wire 1 $! process_0~1_combout $end
+$var wire 1 %! process_0~2_combout $end
+$var wire 1 &! Add0~14_combout $end
+$var wire 1 '! process_0~0_combout $end
+$var wire 1 (! process_0~3_combout $end
+$var wire 1 )! process_0~5_combout $end
+$var wire 1 *! process_0~4_combout $end
+$var wire 1 +! process_0~6_combout $end
+$var wire 1 ,! process_1~7_combout $end
+$var wire 1 -! process_1~4_combout $end
+$var wire 1 .! Add0~4_combout $end
+$var wire 1 /! process_1~6_combout $end
+$var wire 1 0! process_1~8_combout $end
+$var wire 1 1! vga_rgb~1_combout $end
+$var wire 1 2! vga_rgb~2_combout $end
+$var wire 1 3! vga_rgb~3_combout $end
+$var wire 1 4! v_pos [9] $end
+$var wire 1 5! v_pos [8] $end
+$var wire 1 6! v_pos [7] $end
+$var wire 1 7! v_pos [6] $end
+$var wire 1 8! v_pos [5] $end
+$var wire 1 9! v_pos [4] $end
+$var wire 1 :! v_pos [3] $end
+$var wire 1 ;! v_pos [2] $end
+$var wire 1 <! v_pos [1] $end
+$var wire 1 =! v_pos [0] $end
+$var wire 1 >! alive_counter [7] $end
+$var wire 1 ?! alive_counter [6] $end
+$var wire 1 @! alive_counter [5] $end
+$var wire 1 A! alive_counter [4] $end
+$var wire 1 B! alive_counter [3] $end
+$var wire 1 C! alive_counter [2] $end
+$var wire 1 D! alive_counter [1] $end
+$var wire 1 E! alive_counter [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+0"
+x#
+x$
+x%
+x&
+x'
+x(
+x)
+0*
+1+
+x,
+1-
+1.
+1/
+x0
+x1
+x2
+x3
+x4
+x5
+x6
+x7
+x8
+x9
+x:
+x;
+x<
+x=
+x>
+x?
+x@
+xA
+xB
+xC
+xD
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+xL
+xM
+xN
+xO
+xP
+xQ
+xR
+xS
+xT
+xU
+xV
+xW
+xX
+xY
+xZ
+x[
+x\
+x]
+x^
+x_
+x`
+xa
+xb
+xc
+xd
+xe
+xf
+xg
+xh
+xi
+xj
+xk
+xl
+xm
+xn
+xo
+xp
+xq
+xr
+xs
+xt
+xu
+xv
+xw
+xx
+xy
+xz
+x{
+x|
+x}
+x~
+x!!
+x"!
+x#!
+x$!
+x%!
+x&!
+x'!
+x(!
+x)!
+x*!
+x+!
+x,!
+x-!
+x.!
+x/!
+x0!
+x1!
+x2!
+x3!
+x=!
+x<!
+x;!
+x:!
+x9!
+x8!
+x7!
+x6!
+x5!
+x4!
+zE!
+xD!
+xC!
+xB!
+xA!
+x@!
+x?!
+x>!
+$end
+#10000
+1"
+0)
+#20000
+0"
+1)
+#30000
+1"
+0)
+#40000
+0"
+1)
+#50000
+1"
+0)
+#60000
+0"
+1)
+#70000
+1"
+0)
+#80000
+0"
+1)
+#90000
+1"
+0)
+#100000
+0"
+1)
+#110000
+1"
+0)
+#120000
+0"
+1)
+#130000
+1"
+0)
+#140000
+0"
+1)
+#150000
+1"
+0)
+#160000
+0"
+1)
+#170000
+1"
+0)
+#180000
+0"
+1)
+#190000
+1"
+0)
+#200000
+0"
+1)
+#210000
+1"
+0)
+#220000
+0"
+1)
+#230000
+1"
+0)
+#240000
+0"
+1)
+#250000
+1"
+0)
+#260000
+0"
+1)
+#270000
+1"
+0)
+#280000
+0"
+1)
+#290000
+1"
+0)
+#300000
+0"
+1)
+#310000
+1"
+0)
+#320000
+0"
+1)
+#330000
+1"
+0)
+#340000
+0"
+1)
+#350000
+1"
+0)
+#360000
+0"
+1)
+#370000
+1"
+0)
+#380000
+0"
+1)
+#390000
+1"
+0)
+#400000
+0"
+1)
+#410000
+1"
+0)
+#420000
+0"
+1)
+#430000
+1"
+0)
+#440000
+0"
+1)
+#450000
+1"
+0)
+#460000
+0"
+1)
+#470000
+1"
+0)
+#480000
+0"
+1)
+#490000
+1"
+0)
+#500000

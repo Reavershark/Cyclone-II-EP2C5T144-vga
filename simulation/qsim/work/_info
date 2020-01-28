@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/hdd/jonas/Projects/FPGA/vga/simulation/qsim
+vvga
+Z1 I^KB:WJ:XX7niE85mUAC@T3
+Z2 VK>0VXSKg1b?zfAGQKZJ6b2
+Z3 d/hdd/jonas/Projects/FPGA/vga/simulation/qsim
+Z4 w1579541478
+Z5 8vga.vo
+Z6 Fvga.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|vga.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 GXbXa=`jJCX`3]JSMI^1H0
+!s85 0
+Z11 !s108 1579541479.231154
+Z12 !s107 vga.vo|
+!s101 -O0
+vvga_vlg_check_tst
+!i10b 1
+!s100 PMc@hI2T<cmMEamzPHhb?0
+IXK9ihmN4WP84<XemRO8He0
+VlHZ48^c<Pcdc:WfGQamCC2
+R3
+Z13 w1579541477
+Z14 8vga.vt
+Z15 Fvga.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1579541479.255353
+Z17 !s107 vga.vt|
+Z18 !s90 -work|work|vga.vt|
+!s101 -O0
+R9
+vvga_vlg_sample_tst
+!i10b 1
+!s100 7icWeBK:zilXfjGUOh8B>0
+IRFVZK;A:aK^@_eoY^W?zJ1
+V8Vn?[:FLYiez6?3Pme2Uf2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vvga_vlg_vec_tst
+!i10b 1
+!s100 >f<9NFXO4iGzSja49?Nn33
+Il4[dAic?FQ2c9I[8XjP4A0
+Z19 V=A_?V1YbmNB9QDzK;dzPl1
+R3
+R13
+R14
+R15
+L0 267
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9

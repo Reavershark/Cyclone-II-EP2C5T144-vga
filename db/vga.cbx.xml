@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="vga">
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_lto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_mto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_qto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_bso.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
