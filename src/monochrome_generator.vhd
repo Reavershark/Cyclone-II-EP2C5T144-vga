@@ -2,20 +2,15 @@ library ieee;
 
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
-use ieee.config;
+use ieee.config.all;
 
 entity monochrome_generator is
     port(
         clk   : in  std_logic;
         h_pos : in  integer range 0 to h_length := 0;
-        v_pos : in  integer range 0 to h_length := 0;
+        v_pos : in  integer range 0 to v_length := 0;
         white : out std_logic := '0'
     );
-end;
-
-architecture behaviour of monochrome_generator is
-begin
-white <= '0' when (((h_pos + v_pos + (count / 1_000_000)) / 64) mod 2) = 0 else '1';
 end;
 
 architecture logic of monochrome_generator is
@@ -27,6 +22,7 @@ begin
             count <= count + 1;
         end if;
     end process;
+    white <= '0' when (((h_pos + v_pos + (count / 1_000_000)) / 64) mod 2) = 0 else '1';
 end;
 
 --subtype rgb is std_logic_vector(2 downto 0);
