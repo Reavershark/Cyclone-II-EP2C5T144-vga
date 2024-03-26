@@ -14,29 +14,29 @@ entity monochrome_generator is
 end;
 
 architecture logic of monochrome_generator is
-    signal count : integer := 0;
+    subtype pixel        is std_logic;
+    type    pixel_vector is array(natural range <>) of pixel;
+    subtype row          is pixel_vector(h_v_length/2 - 1 downto 0);
+    type    row_vector   is array(natural range <>) of row;
+    subtype frame        is row_vector(v_v_length/2 downto 0);
+    
+    signal framebuffer : frame := (others => (others => '0'));
+    --signal count : integer := 0;
 begin
     process(clk)
     begin
         if rising_edge(clk) then
-            count <= count + 1;
+        --    count <= count + 1;
         end if;
     end process;
-    white <= '0' when (((h_pos + v_pos + (count / 1_000_000)) / 64) mod 2) = 0 else '1';
+    
+    framebuffer(10) <= (others => '1');
+    framebuffer(20) <= (others => '1');
+    framebuffer(40) <= (others => '1');
+    framebuffer(80) <= (others => '1');
+    framebuffer(160) <= (others => '1');
+
+    white <=
+        framebuffer(v_pos mod (v_v_length/2))(h_pos mod (h_v_length/2)) when v_pos < v_v_length and h_pos < h_v_length
+        else '0';
 end;
-
---subtype rgb is std_logic_vector(2 downto 0);
---type rgb_vector is array(natural range <>) of rgb;
---subtype row is rgb_vector(0 to h_v_length - 1);
---type row_vector is array(natural range <>) of row;
---subtype frame is row_vector(0 to v_v_length - 1);
---signal frame_main : frame; 
---signal frame_out : frame;
-
--- -- Output a pixel from the framebuffer
--- vga_red <= frame_out(v_pos)(h_pos)(0);
--- vga_green <= frame_out(v_pos)(h_pos)(1);
--- vga_blue <= frame_out(v_pos)(h_pos)(2);
-
--- -- User code
--- frame_main(100)(100) <= "101";
