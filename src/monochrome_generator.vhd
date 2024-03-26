@@ -18,25 +18,23 @@ architecture logic of monochrome_generator is
     type    pixel_vector is array(natural range <>) of pixel;
     subtype row          is pixel_vector(h_v_length/2 - 1 downto 0);
     type    row_vector   is array(natural range <>) of row;
-    subtype frame        is row_vector(v_v_length/2 downto 0);
-    
+    subtype frame        is row_vector(v_v_length/2 - 1 downto 0);
+
     signal framebuffer : frame := (others => (others => '0'));
-    --signal count : integer := 0;
 begin
-    process(clk)
-    begin
-        if rising_edge(clk) then
-        --    count <= count + 1;
-        end if;
-    end process;
-    
-    framebuffer(10) <= (others => '1');
-    framebuffer(20) <= (others => '1');
-    framebuffer(40) <= (others => '1');
-    framebuffer(80) <= (others => '1');
+--    process(clk)
+--    begin
+--        if rising_edge(clk) then
+--        end if;
+--    end process;
+
+    framebuffer(10)  <= (others => '1');
+    framebuffer(20)  <= (others => '1');
+    framebuffer(40)  <= (others => '1');
+    framebuffer(80)  <= (others => '1');
     framebuffer(160) <= (others => '1');
 
     white <=
-        framebuffer(v_pos mod (v_v_length/2))(h_pos mod (h_v_length/2)) when v_pos < v_v_length and h_pos < h_v_length
+        framebuffer(v_pos/2)(h_pos/2) when v_pos < v_v_length and h_pos < h_v_length
         else '0';
 end;
